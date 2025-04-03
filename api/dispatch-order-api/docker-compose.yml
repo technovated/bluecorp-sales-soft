@@ -1,0 +1,32 @@
+services:
+  dispatch-order-api:
+    image: ${DOCKER_REGISTRY-}dispatchorderapi
+    build:
+      context: .
+      dockerfile: dispatch-order-api/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      API_KEY: ${API_KEY}
+      SFTP_HOST: ${SFTP_HOST}
+      SFTP_USER: ${SFTP_USER}
+      SFTP_PASSWORD: ${SFTP_PASSWORD}
+      SFTP_FOLDER: ${SFTP_FOLDER}
+      AzureStorage: ${AzureStorage}
+    ports:
+      - "5000:5000"
+      - "5001:5001"
+    restart: unless-stopped # start API service automatically 
+  rabbitmq:
+    image: rabbitmq:management
+    container_name: local-rabbitmq
+    environment:
+      RABBITMQ_HOST: localhost
+      RABBITMQ_USER: guest
+      RABBITMQ_PWD: guest
+    ports:
+      - "15672:15672"
+      - "5672:5672"
+    healthcheck:
+      test: ["CMD", "rabbitmqctl", "status"]
+      interval: 10s
+      retries: 5

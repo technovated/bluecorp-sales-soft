@@ -16,7 +16,7 @@ Key architecural platforms: Restful APIs, Azure Blob storage, RabbitMQ, .NET cor
 
 
 ## Targets
-This solution is developed cloud-agnostic containers, unfortunately full-fledged cloud integration is not possible now. Targets=> 1. Requires Azure subscription, 2. configure Static IP and whitelist on Azure SFTP, 3. Integration with Azure AppInsights for comprehensive observability, 4. Implement AAD for security are some of the future plans targeted.
+This solution is developed cloud-agnostic containers, unfortunately full-fledged cloud integration is not possible now. Targets=> 1. Requires Azure subscription, 2. configure Static IP and whitelist on Azure SFTP, 3. Integration with Azure AppInsights and log analytics for comprehensive observability and monitoring, 4. Implement AAD for security, 5.Azure API Management are some of the future plans targeted.
 
 ## deployment
 This solution expects .env file containing secrets for execution and functioning of the application.

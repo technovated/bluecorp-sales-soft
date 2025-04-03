@@ -8,6 +8,7 @@ A Restful API based event-driven solution that manages sale order dispatch workf
 - [Future-Target] (#Targets)
 - [Deployment] (#deployment)
 - [Effortspent] (#Effortspent)
+- [Reference guide] (##Reference guide)
 
 ## Architecture
 It is a event-driven, cloud-ready, cloud-agnostic containerized cross-platform solution. It is designed and developed with best practices adhering clean code, CQRS pattern with loosly coupled, interface-segregated, injectable modules and components on demand, runtime injections. Security and safety by design and development.
@@ -31,3 +32,6 @@ AzureStorage=##
 
  Solution design and Infrastructure - 15 hrs
  Developement and testing - 8 hrs
+
+ ## Reference guide
+ Documents/Developer%20test%20handbook.docx

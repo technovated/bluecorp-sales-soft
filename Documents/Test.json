@@ -1,0 +1,23 @@
+{
+  "salesOrder": "SO150847",
+  "containers": [
+    {
+      "loadId": "L001",
+      "containerType": "20RF",
+      "items": [
+        {
+          "itemCode": "ITEM001",
+          "quantity": 5,
+          "cartonWeight": 10.5
+        }
+      ]
+    }
+  ],
+  "deliveryAddress": {
+    "street": "123 Main St",
+    "city": "Auckland",
+    "state": "NZ",
+    "postalCode": "1010",
+    "country": "New Zealand"
+  }
+}

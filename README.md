@@ -4,13 +4,15 @@ A Restful API based event-driven solution that manages sale order dispatch workf
 
 ## Table of Contents
 
-- [Architecture] (#architecture)
-- [Future-Target] (#targets)
+- [Architecture] (#Architecture)
+- [Future-Target] (#Targets)
 - [Deployment] (#deployment)
 - [Effortspent] (#Effortspent)
 
 ## Architecture
 It is a event-driven, cloud-ready, cloud-agnostic containerized cross-platform solution. It is designed and developed with best practices adhering clean code, CQRS pattern with loosly coupled, interface-segregated, injectable modules and components on demand, runtime injections. Security and safety by design and development.
+
+Key architecural platforms: Restful APIs, Azure Blob storage, RabbitMQ, .NET core Middleware, Logger 
 
 
 ## Targets
